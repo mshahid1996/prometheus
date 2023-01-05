@@ -12,7 +12,7 @@ data:
       # https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml#L37
       - job_name: "prometheus"
         static_configs:
-          - targets: "http://20.124.157.233/Select"
+          - targets: "20.124.157.233"
       - job_name: 'kubernetes-nodes'
         tls_config:
           ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
